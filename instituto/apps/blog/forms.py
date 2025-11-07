@@ -22,3 +22,4 @@ class ArticuloForm(forms.ModelForm):
                 'style': 'resize:none;'
             }),
         }
+

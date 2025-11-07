@@ -1,10 +1,10 @@
 from django.urls import path
-from .views import(
+from .views import (
     RegistroUsuarioView,
     LoginUsuarioView,
     LogoutUsuarioView,
     PerfilDetalleView,
-    PerfilUsuarioview,
+    PerfilUsuarioView,
     EliminarUsuarioView,
 )
 
@@ -15,6 +15,6 @@ urlpatterns = [
     path('login/', LoginUsuarioView.as_view(), name='login'),
     path('logout/', LogoutUsuarioView.as_view(), name='logout'),
     path('perfil/', PerfilDetalleView.as_view(), name='perfil'),
-    path('perfil/editar/', PerfilUsuarioview.as_view(), name='perfil_editar'),
+    path('perfil/editar/', PerfilUsuarioView.as_view(), name='perfil_editar'),
     path('perfil/eliminar/', EliminarUsuarioView.as_view(), name='perfil_eliminar'),
 ]

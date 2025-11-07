@@ -154,4 +154,3 @@ class PaginaPrincipalView(TemplateView):
         total_visitas = Articulo.objects.aggregate(total_visitas=Sum('visitas'))['total_visitas'] or 0
         context['total_visitas'] = total_visitas
         return context
-

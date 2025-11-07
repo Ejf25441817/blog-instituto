@@ -41,4 +41,3 @@ class ComentarioUpdateView(LoginRequiredMixin, ComentarioPermisoMixin, UpdateVie
 class ComentarioDeleteView(LoginRequiredMixin, ComentarioPermisoMixin, DeleteView):
     model = Comentario
     template_name = 'comentarios/eliminar_comentario.html'
-

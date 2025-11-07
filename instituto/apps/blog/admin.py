@@ -18,4 +18,3 @@ class ArticuloAdmin(admin.ModelAdmin):
 
 admin.site.register(Categoria, CategoriaAdmin)
 admin.site.register(Articulo, ArticuloAdmin)
-
